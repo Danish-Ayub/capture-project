@@ -10,7 +10,8 @@ const GlobalStyle = createGlobalStyle`
 body {
     background-color: #181818;
     color: white;
-    font-family: monospace
+    font-family: monospace;
+    position: relative;
 }
 button {
     font-weight: bold;
