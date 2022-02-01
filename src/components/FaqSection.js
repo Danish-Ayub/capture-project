@@ -1,44 +1,39 @@
 import React from "react";
-// Styled
 import styled from "styled-components";
 import { About } from '../styles';
+import Toggle from './Toggle';
+import { AnimateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
     return (
         <Faq>
             <h2>Any Questions <span>FAQ</span></h2>
-            <div className="question">
-                <h4>How Do I Start?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni doloremque nostrum quibusdam, nihil commodi ipsa explicabo odio nemo odit.</p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>How Do I Start?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni doloremque nostrum quibusdam, nihil commodi ipsa explicabo odio nemo odit.</p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>How Do I Start?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni doloremque nostrum quibusdam, nihil commodi ipsa explicabo odio nemo odit.</p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>How Do I Start?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni doloremque nostrum quibusdam, nihil commodi ipsa explicabo odio nemo odit.</p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
+            <AnimateSharedLayout>
+                <Toggle title="How do i start?">
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni doloremque nostrum quibusdam, nihil commodi ipsa explicabo odio nemo odit.</p>
+                    </div>
+                </Toggle>
+                <Toggle title="How do jamo lappo?">
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni doloremque nostrum quibusdam, nihil commodi ipsa explicabo odio nemo odit.</p>
+                    </div>
+                </Toggle>
+                <Toggle title="What is jamo lappo?">
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni doloremque nostrum quibusdam, nihil commodi ipsa explicabo odio nemo odit.</p>
+                    </div>
+                </Toggle>
+                <Toggle title="Where to go now?">
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni doloremque nostrum quibusdam, nihil commodi ipsa explicabo odio nemo odit.</p>
+                    </div>
+                </Toggle>
+            </AnimateSharedLayout>
         </Faq>
     );
 }
@@ -60,14 +55,14 @@ const Faq = styled(About)`
     .question {
         h4 {
             font-size: 2rem;
+            padding-bottom: 2rem;
         }
         padding: 3rem 0;
         cursor: pointer;
     }
     .answer {
-        padding: 2rem 0rem;
         p {
-            padding: 1rem 0rem;
+            padding: 1rem 0rem 2rem;
         }
     }
 `;

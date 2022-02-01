@@ -15,6 +15,7 @@ export const Description = styled.div`
     }
 `;
 export const Image = styled.div`
+    z-index: 10;
     flex: 1;
     overflow: hidden;
     img {
