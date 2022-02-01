@@ -72,7 +72,7 @@ const Line = styled(motion.div)`
     width: 0;
     position: absolute;
     bottom: -50%;
-    left: 17px;
+    left: 18px;
 `;
 
 export default Nav;
